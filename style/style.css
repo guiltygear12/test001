@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.header_menu_wrap{
+    width: 100%;
+    height: 100px;
+    background-color:#d9cec571;
+    position: relative;
+    overflow: hidden;
+}
+.header_menu_left{
+    position: absolute;
+    margin: 20px;
+    height: 50px;
+}
+.header_menu_left>h1{
+    font-size: 36px;
+    margin-left: 100px;
+}
+.header_menu_left>p{
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 24px;
+}
+.header_menu_left>*{
+    float: left;
+}
+.main_contents_01_wrap{
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    /* background: rgba(0,0,0,0.5) url("../picture/coding.jpg") left top no-repeat; */
+}
+.main_background{
+    width: 1280px;
+    height: 720px;
+}
+.main_bg_left{
+    position: absolute;
+    width: 400px;
+    height: 720px;
+    background-color: #A6806A;
+    opacity: 100%;
+}
+.main_infomation_wrap{
+    position:absolute;
+    /* background-color: rgb(0,255,255,0.3); */
+    width: 900px;
+    height: 500px;
+    top: 110px;
+    left: 170px;
+}
+.myresume_bg{
+    width: 300px;
+    height: 500px;
+    background-color: #592E1E;
+    float: left;
+}
+.mypicture_wrap{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: blue;
+    float: left;
+    margin: 50px 50px 0 50px;
+}
+.mypicture{
+    width: 200px;
+    height: 200px;
+}
+.resume_text_01{
+    width: 250px;
+    margin: 40px 25px 0 25px;
+    display:inline-block;
+}
+.resume_text_01>*{
+    color: #D9CEC5;
+}
+.resume_text_01 hr{
+    width: 30px;
+}
+.resume_text_01>h2:nth-child(1){
+    text-align: center;
+    padding: 10px;
+}
+.resume_text_01>h2:nth-child(2){
+    text-align: center;
+    padding-bottom: 10px;
+}
+.resume_text_01 p{
+    margin-top: 10px;
+}
+
+.main_my_story{
+    width:550px;
+    margin:50px 0 0 330px;
+}
+.main_my_story h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.main_my_story h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.main_my_story hr {
+    display: inline-block;
+    width: 100px;
+    height: 3px;
+    border-style: none;
+    background-color:black
+}
+.main_my_story p {
+    margin-top: 10px;
+}
+.icon{
+    position: relative;
+    background: url("../picture/게이지바.png") 0 0 / 1000px no-repeat;
+    line-height: 30px;
+    width: 500px;
+    color: rgba(0,0,0,0);
+}
+.icon::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;left: -10;
+    width: 0;
+    height: 100%;
+    background: url("../picture/게이지바.png") -500px 0/ 1000px no-repeat;
+    transition: all 1s;
+}
+.icon01:hover::after{
+    width: 150px;
+}
+.icon02:hover::after{
+    width: 350px;
+}
+.icon03:hover::after{
+    width: 400px;
+}
+.skillLevel{
+    margin-top: 20px;
+}
+.skillLevel p{
+    font-size: 12px;
+}
+/* 자격증 표시영역 */
+.certificate_wrap{
+    display: flex;
+    width: 1280px;
+    height: 720px;
+    margin-top: 30px;
+}
+.certificate_header{
+    width: 1280px;
+    margin-top: 30px;
+}
+.certificate_header h1{
+    font-size: 40px;
+    padding-left: 30px;
+}
+.certificate_box{
+    width: 30%;
+    height: 600px;
+    background-color: #A6806A;
+}
+.img-icon{
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+    
+    border-radius: 50%;
+    border: #D9CEC5 solid 5px;
+}
+.cer_img01{
+    background: #A6806A url("../picture/cg.jpg") -100px 30px repeat;
+}
+.cer_img02{
+    background: #A6806A url("../picture/coding.jpg") -100px 0 / 500px repeat;
+}
+.cer_img03{
+    background: #A6806A url("../picture/studying.jpg") -50px -100px / 500px repeat;
+}
+.certificate_box h2{
+    margin-top: 10px;
+    text-align: center;
+}
+.certificate_box h4{
+    margin-top: 10px;
+    text-align: center;
+}
+.certificate_box hr{
+    margin-top: 10px;
+    width: 250px;
+    border: #D9CEC5 3px solid;
+    background-color: #D9CEC5;
+}
+.certificate_box p{
+    text-align: center;
+    margin: 15px 20px 0px;
+}
